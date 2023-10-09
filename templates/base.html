@@ -1,0 +1,146 @@
+{% include "header.html" %}
+
+<div class="site-content">
+  {% block content %}
+  
+  {% endblock %}
+</div>
+
+{% include "footer.html" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+
+    <style>
+        /* set the text color of the navbar brand and menu options */
+        .navbar-light .navbar-brand,
+        .navbar-light .navbar-nav .nav-link {
+            color: #6f42c1;
+        }
+
+        /* set the hover and focus color of the menu options */
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link:focus {
+            color: #fff;
+            background-color: #6f42c1;
+        }
+
+        /* set the background color of the navbar */
+        .bg-white {
+            background-color: #fff;
+        }
+
+        /* add a small border around the navbar container */
+        .border-rounded {
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+        }
+
+        /* set the background color and text color of the "Get Started" button */
+        .btn-purple {
+            background-color: #6f42c1;
+            color: #fff;
+        }
+
+        /* set the hover and focus background color of the "Get Started" button */
+        .btn-purple:hover,
+        .btn-purple:focus {
+            background-color: #563d7c;
+        }
+
+        .nav-link {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+
+
+
+
+
+        
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border rounded">
+            <div class="container">
+                <a class="navbar-brand text-purple" href="#">
+                    <!-- Replace the src attribute value with the URL of your logo image -->
+                    <!--  <img src="../static/images/logo2.jpg" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">   -->
+                    <!-- Replace the text between the <span> tags with your website title -->
+                    <span class="h4 mb-0 ms-2">KrushiSathi</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-purple" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-purple" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-purple" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-purple" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-purple text-white" href="#">Get Started</a>
+                <span class="mx-3"></span>
+                <a class="btn btn-purple text-white" href="#">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    {% block content %}
+    <!-- your content goes here -->
+    {% endblock %}
+
+
+
+ {% endcomment %}

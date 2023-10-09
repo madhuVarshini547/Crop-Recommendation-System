@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    
+        <!-- <link rel="shortcut icon" href="{% static 'images/logo1.jpg' %}" /> -->
+
+  
+    <style>
+        /* set the text color of the navbar brand and menu options */
+        .navbar-light .navbar-brand,
+        .navbar-light .navbar-nav .nav-link {
+            color: #6f42c1;
+        }
+
+        /* set the hover and focus color of the menu options */
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link:focus {
+            color: #fff;
+            background-color: #6f42c1;
+        }
+
+        /* set the background color of the navbar */
+        .bg-white {
+            background-color: #fff;
+        }
+
+        /* add a small border around the navbar container */
+        .border-rounded {
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+        }
+
+        /* set the background color and text color of the "Get Started" button */
+        .btn-purple {
+            background-color: #6f42c1;
+            color: #fff;
+        }
+
+        /* set the hover and focus background color of the "Get Started" button */
+        .btn-purple:hover,
+        .btn-purple:focus {
+            background-color: #563d7c;
+        }
+
+        .nav-link {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border rounded">
+       
+        <div class="container">
+            <a class="navbar-brand text-purple" href="#">
+                <span class="h4 mb-0 ms-2">KrushiSathi</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-purple" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-purple" href="{% url 'predictor' %}">Crop Prediction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-purple" href="{% url 'plantde' %}">Plant Disease</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-purple" href="{% url 'fert_recommend' %}">Fertilizer </a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-purple" href="{% url 'crop_search' %}">Crop Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-purple" href="{% url 'about' %}">About</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-purple text-white" href="#">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div id="google_element"></div> -->
+</header>
+
+ <script src="{% static 'Javascript/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/bootstrap.bundle.min.js' %}"></script>
+   
+   <!-- <script 
+   src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
+    </script>
+
+   <script>
+    function loadGoogleTranslate(){
+        new google.translate.TranslateElement("google_element");
+    }
+   </script> -->

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<title>Plant Disease Detection System</title>
+<link rel="stylesheet" href="{% static 'CSS/crop.css' %}">
+
+<h1 style="text-align: center;">Plant Disease Detection System</h1>
+<h1>Plant Disease Prediction</h1>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" name="image" accept="image/*" required>
+  <button type="submit">Predict1</button>
+</form>
+
+
+{% endblock %}
